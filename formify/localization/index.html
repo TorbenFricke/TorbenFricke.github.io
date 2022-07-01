@@ -287,22 +287,38 @@
 
             
           
-            
-              
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
   
   
   
     <li class="md-nav__item">
-      <a href="../gallery/material-editor/" class="md-nav__link">
-        Material Editor
+      <a href="../data_modeling/" class="md-nav__link">
+        Data Modelling
       </a>
     </li>
   
 
-            
-          
-        </ul>
-      </nav>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../threading/" class="md-nav__link">
+        Threading
+      </a>
     </li>
   
 
@@ -349,12 +365,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#formify.localization" class="md-nav__link">
+    localization
+  </a>
+  
+    <nav class="md-nav" aria-label="localization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#formify.localization.Translator" class="md-nav__link">
     Translator
   </a>
   
     <nav class="md-nav" aria-label="Translator">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formify.localization.Translator.language" class="md-nav__link">
+    language
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#formify.localization.Translator.add" class="md-nav__link">
@@ -388,18 +419,23 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#formify.localization.default_translator" class="md-nav__link">
+    default_translator()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#formify.localization.make_language_switch" class="md-nav__link">
     make_language_switch()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#formify.localization.default_translator" class="md-nav__link">
-    default_translator()
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -420,7 +456,7 @@
   
     <li class="md-nav__item">
       <a href="https://github.com/TorbenFricke/formify" class="md-nav__link">
-         GitHub
+        GitHub
       </a>
     </li>
   
@@ -468,12 +504,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#formify.localization" class="md-nav__link">
+    localization
+  </a>
+  
+    <nav class="md-nav" aria-label="localization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#formify.localization.Translator" class="md-nav__link">
     Translator
   </a>
   
     <nav class="md-nav" aria-label="Translator">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formify.localization.Translator.language" class="md-nav__link">
+    language
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#formify.localization.Translator.add" class="md-nav__link">
@@ -507,18 +558,23 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#formify.localization.default_translator" class="md-nav__link">
+    default_translator()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#formify.localization.make_language_switch" class="md-nav__link">
     make_language_switch()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#formify.localization.default_translator" class="md-nav__link">
-    default_translator()
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -543,24 +599,19 @@ Whichever option you choose, the localization happens on start up.
 If you change the language, the program has to be restarted.</p>
 
 
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-module">
 
 
 
-<h3 id="formify.localization.Translator" class="doc doc-heading">
-        <code>
-formify.localization.Translator        </code>
+<h2 id="formify.localization" class="doc doc-heading">
+          <code>formify.localization</code>
 
 
+</h2>
 
-</h3>
+  <div class="doc doc-contents first">
 
-    <div class="doc doc-contents first">
-
-      <p>By the default, the system language is used (i.e. "en", "de", "fr", ...)</p>
-
-
-
+  
 
   <div class="doc doc-children">
 
@@ -571,185 +622,255 @@ formify.localization.Translator        </code>
 
 
 
-
-
-  <div class="doc doc-object doc-method">
-
-
-
-<h4 id="formify.localization.Translator.add" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">langauges</span><span class="p">)</span></code>
-
-
-</h4>
-
-    <div class="doc doc-contents ">
-
-      <p>Add translations for an id. You can use any string as `id.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>translator = Translator()
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>translator.add(&quot;button_open&quot;, en=&quot;Open&quot;, de=&quot;Öffnen&quot;})
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>translator.language = &quot;de&quot;
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>print(translator(&quot;button_open&quot;)) # returns &quot;Öffnen&quot;
-</code></pre></div>
-
-    </div>
-
-  </div>
+<div class="doc doc-object doc-class">
 
 
 
-  <div class="doc doc-object doc-method">
+<h3 id="formify.localization.Translator" class="doc doc-heading">
+        <code>Translator</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>By the default, the system language is used (i.e. "en", "de", "fr", ...)</p>
 
 
 
-<h4 id="formify.localization.Translator.__call__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
+  
 
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="formify.localization.Translator.language" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">language</span> <span class="o">=</span> <span class="n">language</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 </h4>
 
-    <div class="doc doc-contents ">
 
-      <p>Grab the translation for id based on the current language. Always returns a string.
-If no translation for the current language <code>translator.language</code> is provided, the id is returned.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>translator(&quot;button_open&quot;)
+  <div class="doc doc-contents ">
+  
+      <p>Set the current language (usually a language code)</p>
+  </div>
+
+</div>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="formify.localization.Translator.add" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">add</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="o">**</span><span class="n">langauges</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Add translations for an id. You can use any string as `id.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">translator</span> <span class="o">=</span> <span class="n">Translator</span><span class="p">()</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">translator</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;button_open&quot;</span><span class="p">,</span> <span class="n">en</span><span class="o">=</span><span class="s2">&quot;Open&quot;</span><span class="p">,</span> <span class="n">de</span><span class="o">=</span><span class="s2">&quot;Öffnen&quot;</span><span class="p">})</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">translator</span><span class="o">.</span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;de&quot;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">translator</span><span class="p">(</span><span class="s2">&quot;button_open&quot;</span><span class="p">))</span> <span class="c1"># returns &quot;Öffnen&quot;</span>
 </code></pre></div>
-
-    </div>
 
   </div>
 
+</div>
+
+<div class="doc doc-object doc-function">
 
 
-  <div class="doc doc-object doc-method">
+
+<h4 id="formify.localization.Translator.__call__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__call__</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Grab the translation for id based on the current language. Always returns a string.
+If no translation for the current language <code>translator.language</code> is provided, the id is returned.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">translator</span><span class="p">(</span><span class="s2">&quot;button_open&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
 
 
 
 <h4 id="formify.localization.Translator.load" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
-
+<code class="highlight language-python"><span class="n">load</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span></code>
 
 </h4>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+  
       <p>Reads all translations into a JSON file.</p>
-
-    </div>
 
   </div>
 
+</div>
 
-
-  <div class="doc doc-object doc-method">
+<div class="doc doc-object doc-function">
 
 
 
 <h4 id="formify.localization.Translator.save" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
-
+<code class="highlight language-python"><span class="n">save</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span></code>
 
 </h4>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+  
       <p>Dumps all translations into a JSON file.</p>
 
-    </div>
+  </div>
+
+</div>
+
+
 
   </div>
 
-
-
-
-
   </div>
 
-    </div>
-
-  </div>
+</div>
 
 
-
-  <div class="doc doc-object doc-function">
-
-
-
-<h3 id="formify.localization.make_language_switch" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">formify</span><span class="o">.</span><span class="n">localization</span><span class="o">.</span><span class="n">make_language_switch</span><span class="p">(</span><span class="n">translator</span><span class="p">:</span> <span class="n">Translator</span><span class="p">,</span> <span class="n">language_order</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">&lt;</span><span class="n">built</span><span class="o">-</span><span class="ow">in</span> <span class="n">function</span> <span class="n">callable</span><span class="o">&gt;</span></code>
-
-
-</h3>
-
-    <div class="doc doc-contents first">
-
-      <p>Makes a function, that selects the argument corresponding to the current language. Best read the example below:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>translator = Translator()
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>switch = make_language_switch(translator, [&quot;en&quot;, &quot;de&quot;])
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>translator.language = &quot;en&quot;
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>print(switch(&quot;open&quot;, &quot;öffnen&quot;)) # prints &quot;open&quot;
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>translator.language = &quot;de&quot;
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>print(switch(&quot;open&quot;, &quot;öffnen&quot;)) # prints &quot;öffnen&quot;
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a># set the text of a button
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>ControlButton(switch(&quot;open&quot;, &quot;öffnen&quot;))
-</code></pre></div>
-
-<p><strong>Parameters:</strong></p>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Description</th>
-      <th>Default</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr>
-        <td><code>translator</code></td>
-        <td><code>Translator</code></td>
-        <td><p>used to determine the current language</p></td>
-        <td><em>required</em></td>
-      </tr>
-      <tr>
-        <td><code>language_order</code></td>
-        <td><code>list</code></td>
-        <td><p>language order of the language switch arguments</p></td>
-        <td><em>required</em></td>
-      </tr>
-  </tbody>
-</table>
-    </div>
-
-  </div>
-
-
-
-  <div class="doc doc-object doc-function">
+<div class="doc doc-object doc-function">
 
 
 
 <h3 id="formify.localization.default_translator" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">formify</span><span class="o">.</span><span class="n">localization</span><span class="o">.</span><span class="n">default_translator</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Translator</span></code>
-
+<code class="highlight language-python"><span class="n">default_translator</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 </h3>
 
-    <div class="doc doc-contents first">
 
+  <div class="doc doc-contents ">
+  
       <p>Returns a <code>Translator</code>, populated with translations for default menu items (Open, Close, ...) for german and english.
 <em>args and </em><em>kwargs are passed to the Translator(</em>args, **kwargs).</p>
 
-    </div>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="formify.localization.make_language_switch" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">make_language_switch</span><span class="p">(</span><span class="n">translator</span><span class="p">,</span> <span class="n">language_order</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Makes a function, that selects the argument corresponding to the current language. Best read the example below:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">translator</span> <span class="o">=</span> <span class="n">Translator</span><span class="p">()</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">switch</span> <span class="o">=</span> <span class="n">make_language_switch</span><span class="p">(</span><span class="n">translator</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="s2">&quot;de&quot;</span><span class="p">])</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">translator</span><span class="o">.</span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">switch</span><span class="p">(</span><span class="s2">&quot;open&quot;</span><span class="p">,</span> <span class="s2">&quot;öffnen&quot;</span><span class="p">))</span> <span class="c1"># prints &quot;open&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">translator</span><span class="o">.</span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;de&quot;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">switch</span><span class="p">(</span><span class="s2">&quot;open&quot;</span><span class="p">,</span> <span class="s2">&quot;öffnen&quot;</span><span class="p">))</span> <span class="c1"># prints &quot;öffnen&quot;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># set the text of a button</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">ControlButton</span><span class="p">(</span><span class="n">switch</span><span class="p">(</span><span class="s2">&quot;open&quot;</span><span class="p">,</span> <span class="s2">&quot;öffnen&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>translator</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="formify.localization.Translator" href="#formify.localization.Translator">Translator</a></code>
+          </td>
+          <td><p>used to determine the current language</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>language_order</code></td>
+          <td>
+                <code>list</code>
+          </td>
+          <td><p>language order of the language switch arguments</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>language_switch</code></td>          <td>
+                <code>callable</code>
+          </td>
+          <td><p>language switch function</p></td>
+        </tr>
+    </tbody>
+  </table>
 
   </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
 
               
             </article>
@@ -763,7 +884,7 @@ If no translation for the current language <code>translator.language</code> is p
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../gallery/material-editor/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Material Editor" rel="prev">
+        <a href="../threading/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Threading" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -772,7 +893,7 @@ If no translation for the current language <code>translator.language</code> is p
               <span class="md-footer__direction">
                 Previous
               </span>
-              Material Editor
+              Threading
             </div>
           </div>
         </a>

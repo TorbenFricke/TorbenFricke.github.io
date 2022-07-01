@@ -2,37 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://torbenfricke.github.io/formify/</loc>
-         <lastmod>2022-04-11</lastmod>
+         <lastmod>2022-07-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://torbenfricke.github.io/formify/controls/</loc>
+         <lastmod>2022-07-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://torbenfricke.github.io/formify/data_modeling/</loc>
+         <lastmod>2022-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://torbenfricke.github.io/formify/localization/</loc>
-         <lastmod>2022-04-11</lastmod>
+         <lastmod>2022-07-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://torbenfricke.github.io/formify/threading/</loc>
+         <lastmod>2022-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://torbenfricke.github.io/formify/gallery/material-editor/</loc>
-         <lastmod>2022-04-11</lastmod>
+         <lastmod>2022-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://torbenfricke.github.io/formify/gallery/matplotlib/</loc>
-         <lastmod>2022-04-11</lastmod>
+         <lastmod>2022-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://torbenfricke.github.io/formify/gallery/people/</loc>
-         <lastmod>2022-04-11</lastmod>
+         <lastmod>2022-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://torbenfricke.github.io/formify/gallery/pyvista-solids/</loc>
-         <lastmod>2022-04-11</lastmod>
+         <lastmod>2022-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://torbenfricke.github.io/formify/gallery/pyvista-wave/</loc>
-         <lastmod>2022-04-11</lastmod>
+         <lastmod>2022-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
